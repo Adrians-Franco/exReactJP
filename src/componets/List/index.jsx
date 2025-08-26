@@ -1,0 +1,25 @@
+import './style.css'
+
+function List({ titulo, exibirPrimeiraLista }) {
+    return(
+      <section>
+          <h2 id="exemplo-get">{titulo}</h2>
+
+         {exibirPrimeiraLista }
+          <h3>Lista não ordenada</h3>
+          <ul id="my-list"></ul>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <h3>Lista ordenada</h3>
+          <ol>
+            <li>Primero item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+          </ol>
+        </section>
+    )
+}
+export default List
